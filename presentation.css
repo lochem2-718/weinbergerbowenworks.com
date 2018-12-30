@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.jumbotron {
-    background-image: url('jumbo-image.jpg');
+* {
+    font: 'Open Sans', sans-serif; 
+}
+
+.jumbotron-fluid {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: darkgreen;
+}
+
+@media screen and ( min-width: 600px ) {
+    .jumbotron-fluid {
+        background-image: url('images/main-image.jpg');
+    }
+    .jumbotron-fluid .title-mobile {
+        display: none;
+    }
+}
+@media screen and ( max-width: 600px ) {
+    .jumbotron-fluid {
+        background-image: url('images/main-image-mobile.jpg');
+    }
+    .jumbotron-fluid .title-desktop {
+        display: none;
+    }
+}
+
+.jumbotron-fluid {
+    color: darkgreen;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
