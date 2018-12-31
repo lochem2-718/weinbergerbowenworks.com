@@ -3,12 +3,22 @@
 * {
     font: 'Open Sans', sans-serif; 
 }
+html {
+    position: relative;
+}
 
 .jumbotron-fluid {
     
     background-size: cover;
     background-repeat: no-repeat;
-    color: darkgreen;
+}
+
+.jumbotron-fluid .undertitle {
+    font-weight: bloder;
+}
+.main-content {
+    min-height: -webkit-calc(100vh - 120px);
+    min-height: calc(100vh - 120px);
 }
 
 @media screen and ( min-width: 600px ) {
@@ -27,14 +37,23 @@
         display: none;
     }
 }
-
-.jumbotron-fluid {
-    color: darkgreen;
+.contact-field-label {
+    font-weight: 600;
 }
 
-.navigation ul {
+footer {
+    height: 80px;
+    margin-top: 40px;
+    line-height: 80px;
+    text-align: center;
+    width: 100%;
+    background-color: #e3e3e5;
+}
+
+.navigation * {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    color: black !important;
 }
