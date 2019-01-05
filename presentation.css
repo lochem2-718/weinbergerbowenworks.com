@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-* {
-    font: 'Open Sans', sans-serif; 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
 }
+
+* {
+    font-family: 'Open Sans', sans-serif; 
+}
+
 html {
     position: relative;
 }
@@ -15,10 +21,12 @@ html {
 
 .jumbotron-fluid .undertitle {
     font-weight: bloder;
+    font: 'Open Sans';
 }
 .main-content {
     min-height: -webkit-calc(100vh - 100px);
     min-height: calc(100vh - 100px);
+    padding: 0px;
 }
 
 @media screen and ( min-width: 600px ) {
@@ -56,4 +64,21 @@ footer {
     display: flex;
     justify-content: space-around;
     color: black !important;
+}
+
+.owner-image {
+    max-width: 250px;
+}
+
+.quote-source {
+    margin-left: 2em;
+    font-weight: 500;
+}
+
+.session-prep-item {
+    margin-top: 1em;
+}
+
+.big-quote {
+    font-weight: 500;
 }
