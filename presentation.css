@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+    src: url('open-sans/OpenSans-Regular.ttf') format('truetype');
 }
 
 * {
@@ -13,16 +11,17 @@ html {
     position: relative;
 }
 
-.jumbotron-fluid {
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .jumbotron-fluid .undertitle {
     font-weight: bloder;
     font: 'Open Sans';
 }
+
+.jumbotron-fluid {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
 .main-content {
     min-height: -webkit-calc(100vh - 100px);
     min-height: calc(100vh - 100px);
@@ -33,18 +32,29 @@ html {
     .jumbotron-fluid {
         background-image: url('images/main-image.jpg');
     }
-    .jumbotron-fluid .title-mobile {
-        display: none;
+    .jumbotron-fluid .title{
+        font-size: 4.5rem;
+    }
+    .owner-image {
+        float: right;
     }
 }
+
 @media screen and ( max-width: 600px ) {
     .jumbotron-fluid {
         background-image: url('images/main-image-mobile.jpg');
     }
-    .jumbotron-fluid .title-desktop {
-        display: none;
+    .jumbotron-fluid .title {
+        font-size: 3rem;
     }
 }
+
+.map {
+    border: 0;
+    max-width: 600px;
+    max-height: 450px;
+}
+
 .contact-field-label {
     font-weight: 600;
 }
@@ -68,6 +78,7 @@ footer {
 
 .owner-image {
     max-width: 250px;
+    margin: 1em;
 }
 
 .quote-source {
