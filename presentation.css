@@ -32,11 +32,17 @@ html {
     .jumbotron-fluid {
         background-image: url('images/main-image.jpg');
     }
-    .jumbotron-fluid .title{
+    .jumbotron-fluid .title {
         font-size: 4.5rem;
     }
     .owner-image {
         float: right;
+    }
+    #navigation-mobile-button {
+        display: none;
+    }
+    .navigation-mobile {
+        display: none;
     }
 }
 
@@ -46,6 +52,9 @@ html {
     }
     .jumbotron-fluid .title {
         font-size: 3rem;
+    }
+    .navigation-desktop {
+        display: none;
     }
 }
 
@@ -69,11 +78,43 @@ footer {
 }
 
 .navigation * {
+    color: black;
     list-style: none;
-    padding: 0;
+}
+
+.navigation-desktop {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.navigation-desktop ul {
+    padding: 0px;
     display: flex;
     justify-content: space-around;
-    color: black !important;
+    font-weight: bolder;
+}
+.navigation-desktop .nav-break {
+    margin: 0px;
+    font-weight: normal;
+}
+
+.collapse-button {
+    margin: .5em;
+}
+
+.navigation-mobile {
+    background-color: rgba(255, 255, 255, .4);
+    padding: .5em;
+}
+
+.navigation-mobile div {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navigation-mobile div a {
+    display: inline;
 }
 
 .owner-image {
