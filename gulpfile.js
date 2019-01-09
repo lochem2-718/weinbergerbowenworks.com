@@ -11,6 +11,8 @@ function default_task( call_on_finish ) {
     
     gulp.src( [ 'images/main-image-mobile.jpg', 'images/main-image.jpg', 'images/yolanda-image.jpeg' ] )
         .pipe( gulp.dest( 'prod/images' ) )
+    gulp.src( 'favicon.ico' )
+        .pipe( gulp.dest( 'prod' ) )    
 
 
     console.log( 'Moving Fonts' )
@@ -45,7 +47,7 @@ function default_task( call_on_finish ) {
 
 function tar_and_gz( call_on_finish ) {
     console.log( 'Writing files in prod/ to weinbergerbowenworks.com.tar.gz' )
-    gulp.src( 'prod/*' )
+    gulp.src( 'prod/**' )
         .pipe( tar( 'weinbergerbowenworks.com.tar' ) )
         .pipe( gzip() )
         .pipe( gulp.dest( '.' ) )
