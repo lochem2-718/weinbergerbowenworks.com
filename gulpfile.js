@@ -15,26 +15,26 @@ function default_task( call_on_finish ) {
         .pipe( gulp.dest( 'prod' ) )    
 
 
-    console.log( 'Moving Fonts' )
-    gulp.src( 'open-sans/OpenSans-Regular.ttf' )
-        .pipe( gulp.dest( 'prod/open-sans' ) )
+    // console.log( 'Moving Fonts' )
+    // gulp.src( 'open-sans/OpenSans-Regular.ttf' )
+    //     .pipe( gulp.dest( 'prod/open-sans' ) )
 
 
     console.log( 'Moving and minifying CSS files' )
-    gulp.src( 'bootstrap/css/bootstrap.min.css' )
-        .pipe( gulp.dest( 'prod/bootstrap/css' ) )
+    // gulp.src( 'bootstrap/css/bootstrap.min.css' )
+    //     .pipe( gulp.dest( 'prod/bootstrap/css' ) )
     
     gulp.src( 'presentation.css' )
         .pipe( clean_css( { compatibility: 'ie9' } ) )
         .pipe( gulp.dest( 'prod' ) )
 
 
-    console.log( 'Moving JS' )
-    gulp.src( 'jquery-3.3.1.min.js' )
-        .pipe( gulp.dest( 'prod' ) )
+    // console.log( 'Moving JS' )
+    // gulp.src( 'jquery-3.3.1.min.js' )
+    //     .pipe( gulp.dest( 'prod' ) )
 
-    gulp.src( 'bootstrap/js/bootstrap.min.js' )
-        .pipe( gulp.dest( 'prod/bootstrap/js' ) )
+    // gulp.src( 'bootstrap/js/bootstrap.min.js' )
+    //     .pipe( gulp.dest( 'prod/bootstrap/js' ) )
 
 
     console.log( 'Moving and minifying HTML' )

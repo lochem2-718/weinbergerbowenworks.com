@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Open Sans';
-    src: url('open-sans/OpenSans-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
     font-family: 'Open Sans', sans-serif; 
