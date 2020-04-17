@@ -8,9 +8,9 @@ cp images/yolanda-image.jpeg prod/images/yolanda-image.jpeg
 cp open-sans/OpenSans-Regular.ttf prod/open-sans/OpenSans-Regular.ttf
 
 cp bootstrap/css/bootstrap.min.css prod/bootstrap/css/bootstrap.min.css
-minify presentation.css -o prod/presentation.css
-minify presentation.css -o presentation.css
+yarn exec minify presentation.css -o prod/presentation.css
+yarn exec minify presentation.css -o presentation.css
 
-htmlmin index.html -o prod/index.html
-htmlmin contact.html -o prod/contact.html
-htmlmin appointment-info.html -o prod/appointment-info.html
+yarn exec htmlmin index.html -o prod/index.html
+yarn exec htmlmin contact.html -o prod/contact.html
+yarn exec htmlmin appointment-info.html -o prod/appointment-info.html
